@@ -4,7 +4,7 @@ import fetcher from "@/utils/fetcher";
 export const userQuery = async () => {
   const user: Partial<UserState> = {};
   //
-  // ipAddress
+  // ip
   const ipData = await fetcher(`https://api.ipify.org?format=json`, {});
   user.ipAddress = ipData.ip;
   //
